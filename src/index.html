@@ -3,27 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Carta de Poker</title>
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container carta mt-5">
+      <div class="row">
+        <div class="paloRamdomDeLasCartas">
+          <span id="palo1"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div
+          class="p-5 numeroDeLaCarta text-center fw-bold"
+          id="numeroRamdomDeLaCarta"
+        ></div>
+      </div>
+      <div class="row">
+        <div class="paloRamdomDeLasCartas invertirPalo">
+          <span id="palo2"></span>
+        </div>
       </div>
     </div>
+    <div class="container position-relative">
+      <button
+        onclick="window.location.reload()"
+        type="button"
+        class="btn btn-warning btn-lg mt-5 position-absolute top-100 start-50 translate-middle"
+      >
+        Generar nueva carta
+      </button>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>

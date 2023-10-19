@@ -1,1 +1,19 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: #075507e3;
+}
+.paloRamdomDeLasCartas {
+  font-size: 85px;
+}
+.numeroDeLaCarta {
+  font-size: 85px;
+}
+.carta {
+  background-color: white;
+  width: 335px;
+  height: 490px;
+  border-radius: 20px;
+}
+.invertirPalo {
+  transform: rotate(0.5turn);
+}
