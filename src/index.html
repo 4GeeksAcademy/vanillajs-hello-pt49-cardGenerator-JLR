@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container carta mt-5">
+    <div class="container carta mt-5" id="cardContainer">
       <div class="row">
         <div class="paloRamdomDeLasCartas">
           <span id="palo1"></span>
@@ -32,13 +32,28 @@
     </div>
     <div class="container position-relative">
       <button
-        onclick="window.location.reload()"
+        id="timerButton"
+        onclick="startGeneratingCards()"
         type="button"
         class="btn btn-warning btn-lg mt-5 position-absolute top-100 start-50 translate-middle"
       >
-        Generar nueva carta
+        Generar nueva carta. Generar una nueva cada 5 segundos.
       </button>
+
+      <div class="d-flex justify-content-center mt-3">
+        <input
+          id="inputheight"
+          type="number"
+          placeholder="Ancho"
+          class="form-control"
+        />
+        <input
+          id="inputwidth"
+          type="number"
+          placeholder="Alto"
+          class="form-control mx-3"
+        />
+      </div>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>
